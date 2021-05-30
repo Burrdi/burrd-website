@@ -10,4 +10,4 @@ Allow: /
 User-agent: Bingbot
 Disallow: /assets/
 
-Sitemap: http://burrd.netlify.app/sitemap.xml
+Sitemap: http://bte1.netlify.app/sitemap.xml
