@@ -1,9 +1,11 @@
 # burrd
 burrd website 
 
-main branch is the live version whereas update branch is for the in dev version which is what should be looked at 
-
 website made originally for school project being developed for fun into something more but don't quote me on that, all the content of the website in junk just to give it some sort of purpose and is no way meant to be serious.
+
+------------------------------------------------------------------------------------------------
+live branch is the website as it is currently being hosted minus the exes for the download links 
+------------------------------------------------------------------------------------------------
 
 new to all this just trying to make something cool with self taught coding and practices with half baked ideas and implementations.
 
