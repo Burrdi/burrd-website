@@ -9,6 +9,6 @@ website made originally for school project being developed for fun into somethin
 
 new to all this just trying to make something cool with self taught coding and practices with half baked ideas and implementations.
 
-any feedback / help appreciatied.
+any help / feedback appreciatied.
 
 domains are https://burrd.netlify.app/ and https://burrd.us.to for main branch and for test branch https://bte1.netlify.app/
