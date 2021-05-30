@@ -1,0 +1,13 @@
+# Group 1
+User-agent: Googlebot
+Disallow: /assets/
+
+# Group 2
+User-agent: *
+Allow: /
+
+# Group 3
+User-agent: Bingbot
+Disallow: /assets/
+
+Sitemap: http://burrd.netlify.app/sitemap.xml
