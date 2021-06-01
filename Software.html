@@ -214,7 +214,6 @@
   goDark = function () {
     body.className = "";
     body.classList.add("dark");
-    body.style.add("background-color: black");
     setCookie("dark");
   },
   goLight = function () {
@@ -222,8 +221,8 @@
     body.classList.add("light");
     setCookie("light");
   };
-  document.querySelector("#lightbutton").addEventListener("click", goDark, false);
-  document.querySelector("#darkbutton").addEventListener("click", goLight, false);
+  document.querySelector("#Lightbutton").addEventListener("click", goDark, false);
+  document.querySelector("#Darkbutton").addEventListener("click", goLight, false);
   
   checkCookie();
   </script>  
