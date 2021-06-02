@@ -26,14 +26,14 @@ text-align: center;
 position: relative;
 bottom: 10px;
 }
-.Subject { 
+#Subject { 
     background-color:#ad60e0;
     color: white;
   /*  border: 2px solid rgb(140, 0, 255); */
     width: auto;
-    height: 20px;
+    height: 50px;
     position: relative; 
-    top: 0px;
+    bottom: 25px;
   /*  height: ;  */
 
 }
