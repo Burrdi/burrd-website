@@ -20,21 +20,19 @@ p{
   font-family: source-code-pro, monospace;
   font-weight: 400;
   font-style: italic;
-  line-height: 0px;
+  line-height: 50px;
   font-size: 22px;
-text-align: center;
-position: relative;
-bottom: 10px;
 }
 #Subject { 
+
     background-color:#ad60e0;
     color: white;
   /*  border: 2px solid rgb(140, 0, 255); */
-    width: auto;
+width: auto;
     height: 50px;
     position: relative; 
-    bottom: 25px;
-  /*  height: ;  */
+    bottom: 33px;
+
 
 }
 .Heading {
@@ -47,6 +45,8 @@ bottom: 10px;
   font-style: italic;
   font-size: 30px;
 }
+
+/* Nav buttons */
 
 .buttoncontainer {
   margin-left: 2%;
@@ -66,15 +66,12 @@ right: 118px;
   height: 100vh;
 }
 .nav{
-  margin-left: 2%;
   width: auto;
   text-align: center;
   position: relative;
- 
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .nav {
   font-family: source-code-pro, monospace;
@@ -128,6 +125,13 @@ right: 118px;
   left: 100%;
 }
 
+/* End of Nav */
+/* Theme buttons */
+#themebuttons{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
 #darkbutton{
     display:inline-block;
     padding:0.35em 1.2em;
