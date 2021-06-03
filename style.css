@@ -16,22 +16,19 @@ p{
   color: #000000;
 }
 
-#Subject{
+.Subject{
   font-family: source-code-pro, monospace;
   font-weight: 400;
   font-style: italic;
   line-height: 50px;
   font-size: 22px;
 }
-#Subject { 
-
+.Subjectwrapper { 
+width: 100px;
+height: 10px;
     background-color:#ad60e0;
-    color: white;
   /*  border: 2px solid rgb(140, 0, 255); */
-width: auto;
-    height: 50px;
-    position: relative; 
-    bottom: 33px;
+
 
 
 }
