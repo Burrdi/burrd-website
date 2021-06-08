@@ -15,7 +15,15 @@ body {
   .light .downloadweb {
     color: #000000;
   }
-   
+
+  /* Highlight Colour */
+  p.txt::selection {
+    background: #d89eff; /* WebKit/Blink Browsers */
+  }
+  p.txt::-moz-selection {
+    background: #d89eff; /* Gecko Browsers */
+  }
+
   /* Subject */
   .subject{
     font-family: source-code-pro, monospace;
