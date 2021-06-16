@@ -2,7 +2,6 @@ body {
 	background-color: #2e2e2e;
 }
 
-
 /* P Tags */
 
 p {
@@ -31,7 +30,7 @@ a.downloadweb {
 }
 
 
-/* Highlight Colour */
+/* Highlight Colours */
 
 p.txt::selection {
 	background: #d89eff;	/* WebKit/Blink Browsers */
@@ -41,6 +40,29 @@ p.txt::-moz-selection {
 	background: #d89eff;	/* Gecko Browsers */
 }
 
+a.nav::selection { 
+	background: #00fc8b;	
+}
+
+a.nav::-moz-selection {
+	background: #00fc8b;	
+}
+
+a.Heading::selection {
+	background: #ff5b5b;	
+}
+
+a.Heading::-moz-selection {
+	background: #ff5b5b;	
+}
+
+span.subject::selection {
+	background: #ff5b5b;	
+}
+
+span.subject::-moz-selection {
+	background: #ff5b5b;	
+}
 
 /* Subject */
 
@@ -60,17 +82,16 @@ p.txt::-moz-selection {
 .subjectwrapper {
 	background-color: #ad60e0;
 	margin: auto;
-	width: 97.52vw; /* This is utterly stupid but it sorta works pls help */
+	/* width: 97.52vw;  This is utterly stupid but it sorta works pls help */
 	padding: 10px;
 	height: 3vh;
 	/*  border: 2px solid rgb(140, 0, 255); */
 }
 
-
 /* Heading */
 .Headingwrapper{
   background-color: #8960e0;
-  width: 97.52vw ; 
+ /* width: 97.52vw ; */
 	padding: 10px;
   
 }
@@ -85,7 +106,7 @@ p.txt::-moz-selection {
 }
 
 
-/* Nav buttons */
+/* Navigation buttons */
 
 .buttoncontainer {
 	margin-left: 2%;
@@ -181,7 +202,7 @@ p.txt::-moz-selection {
 	padding: 10px;
 }
 
-#darkbutton {
+#Darkbutton {
 	display: inline-block;
 	padding: 0.35em 1.2em;
 	border: 0.1em solid #ffffff;
@@ -196,19 +217,19 @@ p.txt::-moz-selection {
 	transition: all 0.2s;
 }
 
-#darkbutton:hover {
+#Darkbutton:hover {
 	color: #000000;
 	background-color: #FFFFFF;
 }
 
 @media all and (max-width:30em) {
-	#darkbutton {
+	#Darkbutton {
 		display: block;
 		margin: 0.4em auto;
 	}
 }
 
-#lightbutton {
+#Lightbutton {
 	display: inline-block;
 	padding: 0.35em 1.2em;
 	border: 0.1em solid #2e2e2e;
@@ -223,13 +244,13 @@ p.txt::-moz-selection {
 	transition: all 0.2s;
 }
 
-#lightbutton:hover {
+#Lightbutton:hover {
 	color: #ffffff;
 	background-color: #2e2e2e;
 }
 
 @media all and (max-width:30em) {
-	#lightbutton {
+	#Lightbutton {
 		display: block;
 		margin: 0.4em auto;
 	}
