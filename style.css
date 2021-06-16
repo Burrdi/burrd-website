@@ -73,16 +73,12 @@ span.subject::-moz-selection {
 	line-height: 0px;
 	font-size: 22px;
 	text-align: center;
-	/* margin: auto;
-    width: 60%;
-    padding: 10px; */
 	position: inherit;
 }
 
 .subjectwrapper {
 	background-color: #ad60e0;
 	margin: auto;
-	/* width: 97.52vw;  This is utterly stupid but it sorta works pls help */
 	padding: 10px;
 	height: 3vh;
 	/*  border: 2px solid rgb(140, 0, 255); */
@@ -90,8 +86,7 @@ span.subject::-moz-selection {
 
 /* Heading */
 .Headingwrapper{
-  background-color: #8960e0;
- /* width: 97.52vw ; */
+	background-color: #8960e0;
 	padding: 10px;
   
 }
@@ -116,11 +111,6 @@ span.subject::-moz-selection {
 	bottom: 49vh;
 	/* kill me */
 	right: 6.01vh;
-	/* bottom: 49.2%;
-    right: 15.5%;
-  bottom: 475px;
-  right: 118px;
-  */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -164,7 +154,6 @@ span.subject::-moz-selection {
 	overflow: hidden;
 }
 
-
 /*.nav:hover {
     box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
   }*/
@@ -184,7 +173,6 @@ span.subject::-moz-selection {
 	left: 100%;
 }
 
-
 /* End of Nav */
 
 .titles {
@@ -192,7 +180,6 @@ span.subject::-moz-selection {
 	background-color: slateblue;
 	font-family: Arial;
 }
-
 
 /* Theme buttons */
 
@@ -322,10 +309,3 @@ footer {
 	width: 100%;
 	padding: 10px;
 }
-
-
-/* #mailto {
-      position: relative;
-      text-align: right;
-      bottom: 3.5vh;
-    } */
