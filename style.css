@@ -140,6 +140,13 @@ span.subject::-moz-selection {
 	overflow: hidden;
 }
 
+@media all and (max-width:30em) {
+	.nav {
+		display: block;
+		margin: 0.4em auto;
+	}
+}
+
 .light .nav {
 	font-family: source-code-pro, monospace;
 	font-weight: 200;
@@ -152,6 +159,13 @@ span.subject::-moz-selection {
 	border: 1px solid #8960e0;
 	position: relative;
 	overflow: hidden;
+}
+
+@media all and (max-width:30em) {
+	.nav {
+		display: block;
+		margin: 0.4em auto;
+	}
 }
 
 /*.nav:hover {
@@ -260,14 +274,14 @@ span.subject::-moz-selection {
 	transition: all 0.15s;
 }
 
-.button5:hover {
+.downloadbutton:hover {
 	text-shadow: 0 0 2em rgba(255, 255, 255, 1);
 	color: #FFFFFF;
 	border-color: #FFFFFF;
 }
 
 @media all and (max-width:30em) {
-	.button5 {
+	.downloadbutton {
 		display: block;
 		margin: 0.4em auto;
 	}
