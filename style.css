@@ -65,23 +65,21 @@ span.subject::-moz-selection {
 }
 
 /* Subject */
-
-.subject {
-	font-family: source-code-pro, monospace;
-	font-weight: 400;
-	font-style: italic;
-	line-height: 0px;
-	font-size: 22px;
-	text-align: center;
-	position: inherit;
-}
-
 .subjectwrapper {
 	background-color: #ad60e0;
 	margin: auto;
 	padding: 10px;
 	height: 3vh;
 	/*  border: 2px solid rgb(140, 0, 255); */
+}
+
+.subject {
+	font-family: source-code-pro, monospace;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 22px;
+	text-align: center;
+	position: inherit;
 }
 
 /* Heading */
@@ -102,21 +100,6 @@ span.subject::-moz-selection {
 
 
 /* Navigation buttons */
-
-.buttoncontainer {
-	margin-left: 2%;
-	width: 32%;
-	text-align: center;
-	position: relative;
-	bottom: 49vh;
-	/* kill me */
-	right: 6.01vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
-
 .nav {
 	width: auto;
 	text-align: center;
@@ -140,10 +123,15 @@ span.subject::-moz-selection {
 	overflow: hidden;
 }
 
-@media all and (max-width:30em) {
+@media all and (max-width:1250px) {
 	.nav {
-		display: block;
-		margin: 0.4em auto;
+        font-size: 20px;
+	}
+}
+
+@media all and (max-width:400px) {
+	.nav {
+        font-size: 14px;
 	}
 }
 
@@ -161,10 +149,15 @@ span.subject::-moz-selection {
 	overflow: hidden;
 }
 
-@media all and (max-width:30em) {
-	.nav {
-		display: block;
-		margin: 0.4em auto;
+@media all and (max-width:1250px) {
+	.light .nav {
+        font-size: 20px;
+	}
+}
+
+@media all and (max-width:400px) {
+	.light .nav {
+        font-size: 14px;
 	}
 }
 
