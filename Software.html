@@ -70,13 +70,18 @@
     return "";
   }
   function checkCookie() {
+    var darkbutton = document.querySelector("#darkbutton");
+    var lightbutton = document.querySelector("#lightbutton");
     var theme = getCookie("theme");
     if (theme == "dark") {
     body.className = "dark";
-   // document.getElementById("Darkbutton").style.visibility = "hidden";
+    darkbutton.style.display = "block";
+    lightbutton.style.display = "none";
     }
     if (theme == "light") {
     body.className = "light";
+    darkbutton.style.display = "none";
+    lightbutton.style.display = "block";
     }
   }
   </script>
@@ -167,7 +172,7 @@
 <br>
 
 <div id="themebuttons">
-          <!--Theme--> <a id="Lightbutton">Dark Theme</a>  <a id="Darkbutton">Light Theme</a><br> <br>
+         <!--Theme--> <a id="Lightbutton" class="theme">Dark Theme</a>  <a id="Darkbutton" class="theme">Light Theme</a><br> <br>
         </div>
 
           <footer>
@@ -181,44 +186,24 @@
          </footer>
         
             <script src="assets/js/jquery-1.9.1.min.js"></script>
-<!--
-       <script> // J query
-           $(document).ready(function(){
-                $("#Darkbutton").hide(); 
-             });
-            </script>
--->
-<script>
-  $(document).ready(function(){
-    $("#Darkbutton").click(function(){
-      $("#Darkbutton").hide();
-    });
-    $("#Lightbutton").click(function(){
-      $("#Darkbutton").show();
-    });
-  });
-  </script>
-  
-  <script>
-      $(document).ready(function(){
-        $("#Lightbutton").click(function(){
-          $("#Lightbutton").hide();
-        });
-        $("#Darkbutton").click(function(){
-          $("#Lightbutton").show();
-        });
-      });
-      </script>
 
 <script>
-  var body = document.querySelector("body"),
+  var body = document.querySelector("body");
+  var darkbutton = document.querySelector("#Darkbutton");
+  var lightbutton = document.querySelector("#Lightbutton");
 
   goDark = function () {
+    darkbutton.style.display = "block";
+    lightbutton.style.display = "none";
+    body.classList.remove("light");
     body.className = "";
     body.classList.add("dark");
     setCookie("dark");
   },
   goLight = function () {
+    darkbutton.style.display = "none";
+    lightbutton.style.display = "block";
+    body.classList.remove("dark");
     body.className = "";
     body.classList.add("light");
     setCookie("light");

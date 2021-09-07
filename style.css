@@ -1,5 +1,14 @@
+/* <3 */ 
 body {
 	background-color: #2e2e2e;
+}
+
+body.dark {
+	background-color: #2e2e2e;
+}
+
+body.light { 
+	background-color: #fff;
 }
 
 /* P Tags */
@@ -316,3 +325,4 @@ footer {
 	width: 100%;
 	padding: 10px;
 }
+/* burrd wrote this update after getting sick of being in hospital for a week */
