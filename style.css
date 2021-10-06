@@ -76,9 +76,7 @@ span.subject::-moz-selection {
 /* Subject */
 .subjectwrapper {
 	background-color: #ad60e0;
-	margin: auto;
 	padding: 10px;
-	height: 3vh;
 	/*  border: 2px solid rgb(140, 0, 255); */
 }
 
@@ -301,17 +299,24 @@ span.subject::-moz-selection {
 /* Works on Chrome, Edge, and Safari */
 
 *::-webkit-scrollbar {
-	width: 12px;
+	width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-	background: #2e2e2e;
+	margin-block: 7px;
 }
 
 *::-webkit-scrollbar-thumb {
 	background-color: slateblue;
 	border-radius: 5px;
-	border: 2px solid #2e2e2e;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+background: #AD60E0;
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background: springgreen;
 }
 
 footer {
