@@ -93,7 +93,6 @@ span.subject::-moz-selection {
 .Headingwrapper{
 	background-color: #8960e0;
 	padding: 10px;
-  
 }
 .Heading {
 	line-height: 30px;
@@ -198,9 +197,11 @@ span.subject::-moz-selection {
 /* Theme buttons */
 
 #themebuttons {
-	margin: auto;
-	width: 60%;
+	margin: 0px;
+	width: 99%;
 	padding: 10px;
+	display: grid;
+	position: relative;
 }
 
 #Darkbutton {
@@ -216,6 +217,7 @@ span.subject::-moz-selection {
 	color: #ffffff;
 	text-align: center;
 	transition: all 0.2s;
+	position: inherit;
 }
 
 #Darkbutton:hover {
@@ -243,6 +245,7 @@ span.subject::-moz-selection {
 	color: #2e2e2e;
 	text-align: center;
 	transition: all 0.2s;
+	position: inherit;
 }
 
 #Lightbutton:hover {
@@ -321,13 +324,14 @@ background: #AD60E0;
 
 footer {
 	position: relative;
+	width: 100%;
 }
 
 #copyright {
 	color: white;
 	background-color: #ff457d;
-	display: inline-table;
-	width: 100%;
+	align-items: center;
 	padding: 10px;
 }
-/* burrd wrote this update after getting sick of being in hospital for a week */
+
+/* watch me */
