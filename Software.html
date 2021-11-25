@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- I like the girl with magic ways -->
+<!DOCTYPE html> 
 <html lang="en-au" xml:lang="en-au">  
       <head>
         <!-- Google Tag Manager -->
@@ -46,41 +46,41 @@
   gtag('config', 'UA-172627961-1');
 </script>
 
-<!-- Cookie bs-->
-<script> 
-  function setCookie(cvalue) {
-    var d = new Date();
-    d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = "theme=" + cvalue + ";" + expires + "; path=/";
-  }
-  function getCookie(theme) {
-    var name = theme + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-  function checkCookie() {
-    var darkbutton = document.querySelector("#darkbutton");
-    var lightbutton = document.querySelector("#lightbutton");
-    var theme = getCookie("theme");
-    if (theme == "dark") {
-    body.className = "dark";
-    }
-    if (theme == "light") {
-    body.className = "light";
-    }
-  }
-  </script>
+        <!-- Cookie bs-->
+        <script> 
+          function setCookie(cvalue) {
+            var d = new Date();
+            d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = "theme=" + cvalue + ";" + expires + "; path=/";
+          }
+          function getCookie(theme) {
+            var name = theme + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+              }
+            }
+            return "";
+          }
+          function checkCookie() {
+            var darkbutton = document.querySelector("#darkbutton");
+            var lightbutton = document.querySelector("#lightbutton");
+            var theme = getCookie("theme");
+            if (theme == "dark") {
+            goDark()
+            }
+            if (theme == "light") {
+            goLight()
+            }
+          }
+          </script>
 
      </head> 
 
@@ -181,32 +181,37 @@
             </div>
          </footer>
 
-<script>
-  var body = document.querySelector("body");
-  var darkbutton = document.querySelector("#Darkbutton");
-  var lightbutton = document.querySelector("#Lightbutton");
+         <script>
+          console.log(5 + 29)
+          var body = document.querySelector("body");
+          var darkbutton = document.querySelector("#Darkbutton");
+          var lightbutton = document.querySelector("#Lightbutton");
+        
+          goDark = function () {
+            console.log(5 + 6);
+            darkbutton.style.display = "block";
+            lightbutton.style.display = "none";
+            body.classList.remove("light");
+            body.className = "";
+            body.classList.add("dark");
+            setCookie("dark");
+          },
+          goLight = function () {
+            console.log(5 + 10);
+            darkbutton.style.display = "none";
+            lightbutton.style.display = "block";
+            body.classList.remove("dark");
+            body.className = "";
+            body.classList.add("light");
+            setCookie("light");
+          };
+          document.querySelector("#Lightbutton").addEventListener("click", goDark, false);
+          document.querySelector("#Darkbutton").addEventListener("click", goLight, false);
+          
+          checkCookie();
+          </script>  
+        
 
-  goDark = function () {
-    darkbutton.style.display = "block";
-    lightbutton.style.display = "none";
-    body.classList.remove("light");
-    body.className = "";
-    body.classList.add("dark");
-    setCookie("dark");
-  },
-  goLight = function () {
-    darkbutton.style.display = "none";
-    lightbutton.style.display = "block";
-    body.classList.remove("dark");
-    body.className = "";
-    body.classList.add("light");
-    setCookie("light");
-  };
-  document.querySelector("#Lightbutton").addEventListener("click", goDark, false);
-  document.querySelector("#Darkbutton").addEventListener("click", goLight, false);
-  
-  checkCookie();
-  </script>  
 
     </body>  
 </html>
