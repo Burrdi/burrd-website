@@ -1,4 +1,3 @@
-/* <3 */ 
 body {
 	background-color: #2e2e2e;
 }
@@ -189,9 +188,17 @@ span.subject::-moz-selection {
 /* End of Nav */
 
 .titles {
-	color: #FFFFFF;
+	font-family: arial;
+	text-align: center;
+	font-size: 24px;
+	color: white;
 	background-color: slateblue;
-	font-family: Arial;
+}
+
+img.logo {
+	margin-top: 5px;
+	width:auto;
+	height:22px
 }
 
 /* Theme buttons */
