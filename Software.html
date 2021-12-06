@@ -73,6 +73,9 @@
          var darkbutton = document.querySelector("#darkbutton");
          var lightbutton = document.querySelector("#lightbutton");
          var theme = getCookie("theme");
+         if (theme == "") {
+           goDark()
+         }
          if (theme == "dark") {
          goDark()
          }
