@@ -37,6 +37,9 @@ a.downloadweb {
 	color: #000000;
 }
 
+table {
+	margin-top: 15px;
+}
 
 /* Highlight Colours */
 
@@ -341,4 +344,4 @@ footer {
 	padding: 10px;
 }
 
-/* watch me */
+/* the game */
